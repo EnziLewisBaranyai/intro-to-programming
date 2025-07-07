@@ -1,0 +1,39 @@
+7/7/2025
+
+Services
+- Service Oriented Architecture - "microservices"
+- definition: code that owns and is responsible for some data in your organization, and all the code that manages that data.
+
+Monolithic Applications
+- one repository
+- code is all in one place
+- generally the easiest to develop (in aspects where backend services aren't needed)
+    - ex. databases, api's, libraries (these are also backend/backing services)
+- If one part of the application ships 'bad code' to the whole application, then the whole application fails
+
+Application Developers
+- don't get paid to write code exactly
+- get paid to deliver software
+
+A Service somehwat exposes an HTTP Interface (Web APIs/REST APIs/"REST"ful APIs)
+Hide technical components/processes from front facing applications and make it as easy and intuitive as possible for the end user
+
+.NET - Open Source / Cross Platform:
+- Runtime 
+    - CLR (Common Language Runtime)
+    - is OS and Processor Architecture specific
+    - a program that runs other programs
+- Language (C#, VB.NET, C++ with managed extensions, F#) etc.
+- Framework
+
+JVM = Java ... CLR = .NET
+
+ByteCode in Java - Intermediate Langauge (IL)
+
+.NET "Assembly" is similar to a jar in Java
+- the Assembly is what is created in Visual Studio or any other C# .NET application
+- taking a bunch of source code files and create one or more assemblies from them
+- In Visual Studio, a 'Project' === 'Assembly'
+    - Visual Studio also has the idea of a "Solution," which is a workspace for one or more projects
+
+Slowest thing in a process is I/O (calling other backing services, databases, other APIs, etc.)
