@@ -37,3 +37,51 @@ ByteCode in Java - Intermediate Langauge (IL)
     - Visual Studio also has the idea of a "Solution," which is a workspace for one or more projects
 
 Slowest thing in a process is I/O (calling other backing services, databases, other APIs, etc.)
+
+npx gitpick -o JeffryGonzalez/intro-to-programming-july-2025/tree/main/week-1-instructor
+
+7/8/2025
+
+Application Development
+- "Applying Frameworks, Libraries, Systems, to build SPECIFIC things."
+- Prioritize Frequent Iteration
+    - Get stuff out quickly
+    - Experiment
+
+Libraries/Frameworks (Shared Code)
+- coreui
+- Library is code your code uses
+    - Stuff we could write, but use this an expedient
+- Framework is code that uses your code
+    - provide functionality for a specific domain of usage
+    - Server-side web applications in .NET use ASP.NET (Framework)
+    - OO - they provide base classes that we extend.
+
+Systems Programming
+- Network Protocols, Database Engines, Compilers, Operating Systems, etc.
+
+Entities: List of things that each have some unique identifier
+- Like a list of employees
+- EntityFramework
+
+Four Rules of Simple Design:
+- Passes the tests (it works)
+    - Permission to write trash code
+- Reveals intention
+    - You and others can read this and understand what it is doing
+- No duplication
+    - "wastes time" - "we paid you already to write that"
+    - RIGHT but middle school asnwer - "if you change it one place you have to change it everywhere"
+    - Create a "concept" for a business or technical requirement, and that "concept" owns that data and the process around that data
+- Fewest elements
+
+System Tests 
+- do our best to write some tests that demonstrate the current capabilities of our System
+
+Environments 
+- the places your code runs during its life
+
+Deployments 
+- your code in an environment
+
+Configuration = the set of "things" that change based on environment
