@@ -85,3 +85,34 @@ Deployments
 - your code in an environment
 
 Configuration = the set of "things" that change based on environment
+
+7/9/2025
+
+Unit Testing
+- Low level tests that test isolated units of code outside of the context of how they will be used.
+
+Test-First (TDD)
+- can be used with unit testing, system testing, or system integration testing
+- TDD Pattern:
+    - start with a failing unit test (red) -> write just enough code to make the test pass (green) -> "make the code good" (blue/refactoring)
+
+^its a choice you can make on when you write your tests, but you dont have the choice to not write the tests
+
+- Tests pass, expresses intent, low duplication (RUG), fewest elements
+
+Don't worry about writing great code
+- "Paralysis by Analysis"
+
+"Meaningfully Failing Tests"
+- have a unit test/ unit case
+- write garbage to get it to work (chatgpt, stack overflow, whatever)
+- then refactor it on your own
+
+DRY (dont repeat yourself)
+"Moist"
+RUG (repeat until good)
+
+Project/Solution/assemblies
+
+Object-Oriented Means a Language Supports:
+- Encapsulation - "capsule" - a boundary between something and something
