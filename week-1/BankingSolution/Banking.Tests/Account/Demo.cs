@@ -5,16 +5,16 @@ namespace Banking.Tests.Account;
 public class Demo
 {
     [Fact]
-    public void SomeDemo() 
+    public void SomeDemo()
     {
         var barbsAccount = new BankAccount();
         //BankAccount barbsAccount = new();
 
-        var stansAccount = new BankAccount();
+        BankAccount stansAccount = new BankAccount();
 
         Assert.Equal(barbsAccount.GetBalance(), stansAccount.GetBalance());
 
-        stansAccount.Deposit(420.69M);
+        stansAccount.Deposit(420.69M); // 04/20/69 
 
         Assert.NotEqual(barbsAccount.GetBalance(), stansAccount.GetBalance());
     }
@@ -24,7 +24,19 @@ public class Demo
     {
         var myBirthday = new DateTime(1969, 4, 20);
         var barbsBirthday = new DateTime(1974, 4, 10);
+    }
 
-        int myPay = 10;
+    [Fact]
+    public void Implicit()
+    {
+        TransactionAmount t1 = 32.00M;
+        var t2 = 10M;
+
+        var added = t1 += t2;
+
+        Assert.Equal<TransactionAmount>(42M, added);
+
+        var account = new BankAccount();
+        account.Deposit(-32);
     }
 }

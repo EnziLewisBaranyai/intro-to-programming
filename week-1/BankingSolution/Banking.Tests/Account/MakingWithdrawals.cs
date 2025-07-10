@@ -2,10 +2,11 @@
 
 namespace Banking.Tests.Account;
 
-public class MakingWithdrawls
+public class MakingWithdrawals
 {
+
     [Fact]
-    public void MakingAWithdrawlDecreasesBalance()
+    public void MakingAWithdrawalDecreasesBalance()
     {
         var account = new BankAccount();
         var openingBalance = account.GetBalance();
