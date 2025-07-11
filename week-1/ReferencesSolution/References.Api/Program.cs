@@ -1,16 +1,18 @@
-
 using Marten;
-using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("links") ?? throw new Exception("No Connection String");
-Console.WriteLine("Using connection string " + connectionString);
+var connectionString = builder.Configuration.GetConnectionString("links")
+    ?? throw new Exception("No Connection String");
+
+
 // Add services to the container. 
+
+
 builder.Services.AddMarten(config =>
 {
     config.Connection(connectionString);
-}).UseLightweightSessions();
+}).UseLightweightSessions(); // there will be an IDocumentSession available to use in your controllers.
 
 
 builder.Services.AddControllers();

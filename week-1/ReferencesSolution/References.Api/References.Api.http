@@ -10,17 +10,8 @@ Accept: application/json
 POST {{References.Api_HostAddress}}/links 
 Accept: application/json 
 Content-Type: application/json 
-{
-    "href": "https://github.com",
-    "description": "Microsoft's Github Main Site"
-}
 
-###
-
-POST {{References.Api_HostAddress}}/links
-Accept: application/json
-Content-Type: application/json
 {
-    "href": "https://youtube.com",
-    "description": "YouTube"
+    "href": "https://www.progressive.com",
+    "description": "Best dang insurance Main Site"
 }

@@ -1,4 +1,6 @@
-﻿namespace Banking.Domain;
+﻿
+
+namespace Banking.Domain;
 public readonly struct TransactionAmount
 {
     private readonly decimal _amount;
@@ -9,6 +11,7 @@ public readonly struct TransactionAmount
         {
             throw new InvalidTransactionAmountException();
         }
+      
         _amount = amount;
     }
 

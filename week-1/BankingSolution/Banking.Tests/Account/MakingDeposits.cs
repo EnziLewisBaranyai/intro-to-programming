@@ -1,5 +1,7 @@
 ﻿
+
 using Banking.Domain;
+using Banking.Tests.TestDoubles;
 
 namespace Banking.Tests.Account;
 
@@ -12,9 +14,10 @@ public class MakingDeposits
     public void MakingADepositIncreasesTheBalance(decimal amountToDeposit)
     {
         // Given
-        var account = new BankAccount();
+        var account = new BankAccount(new DummyBonusCalculator());
         var openingBalance = account.GetBalance();
        
+
         // When
         account.Deposit(amountToDeposit);
 
